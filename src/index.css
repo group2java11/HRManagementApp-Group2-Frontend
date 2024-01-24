@@ -1,0 +1,28 @@
+:root{
+    --clr-primary-50: #0071dc;
+    --clr-secondary-50: #6c757d;
+    --clr-dark-50: #343a40;
+    --clr-light-1:#f8f9fa;
+    --clr-info-50:#17a2b8;
+    --clr-warning-50:#ffc107;
+    --clr-danger-50:#dc3545;
+    --clr-black-100:black;
+    --clr-white-1:white;
+
+
+   
+}
+
+body {
+    background: var(--clr-white-1);
+    font-family:"Poppins";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+
+
+
+
+
+
+
