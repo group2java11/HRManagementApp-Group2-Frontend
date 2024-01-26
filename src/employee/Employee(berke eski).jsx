@@ -3,10 +3,7 @@
 import 'material-icons/iconfont/material-icons.css';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import SideMenu from '../components/SideMenu';
-import Header from '../components/Header'; // Import the Header component
-import '../components/SideMenu.css';
-import './Employee.css';
+import './Employee.css'; 
 
 const Employee = () => {
   const navigate = useNavigate();
@@ -19,11 +16,57 @@ const Employee = () => {
     <div className="container">
       <div className="top">
         <div className="left">
-          <SideMenu />
+          <div className="logo">
+            <img
+              src="https://cdn.cloudwises.com/ba-assets/genel/bilgeadam_teknoloji_logo_dikey_regular(CMYK).svg"
+              width="200"
+              height="200"
+              alt=""
+            />
+          </div>
+          <div className="side-menu">
+            <ul>
+              <li>
+                <a href="#" className="active">
+                  <i className="material-icons">transfer_within_a_station</i>Clock In/Out
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="material-icons">assignment_ind</i>Paid Time Off Request
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="material-icons">schedule</i>Salary Advance Request
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="material-icons">attach_money</i>Expenses
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="material-icons">settings</i>Profile
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="right">
-          <Header /> {/* Include the Header component here */}
+          <div className="top-menu">
+            <a href="#" className="menu-btn">
+              EMPLOYEES
+            </a>
+            <a href="#" className="menu-btn">
+              PTO
+            </a>
+            <div className="logout">
+              <a href="#">Logout</a>
+            </div>
+          </div>
 
           <div className="content">
             <h1>HR Dashboard</h1>
